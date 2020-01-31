@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Level : MonoBehaviour
 {
-    [SerializeField] int numberOfblocks; // serialized for debugging purposes
+    [SerializeField] int numberOfBlocks; // serialized for debugging purposes
 
     //cached reference
     SceneLoader sceneLoader;
@@ -16,13 +16,13 @@ public class Level : MonoBehaviour
 
     public void CountBlocks()
     {
-        numberOfblocks++;
+        numberOfBlocks++;
     }
 
     public void BreakBlocks()
     {
-        numberOfblocks--;
-        if (numberOfblocks <= 0)
+        numberOfBlocks--;
+        if (numberOfBlocks <= 0)
         {
             sceneLoader.LoadNextScene();
         }
